@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Preferencias...">
+        <CheckBoxPreference
+            android:key="opcion1"
+            android:title="Reproducir música"
+            android:summary="Se reproduce música de fondo" />
+        <ListPreference
+            android:key="opcion2"
+            android:title="Tipo de preguntas"
+            android:summary="Se escoge el tema de las preguntas"
+            android:dialogTitle="Indicar el tema"
+            android:entries="@array/tema"
+            android:entryValues="@array/tema" />
+        <ListPreference
+            android:key="opcion3"
+            android:title="Número de motos"
+            android:summary="En cuántas motos se divide un coche"
+            android:dialogTitle="Indicar número de motos"
+            android:defaultValue="5"
+            android:entries="@array/numeros"
+            android:entryValues="@array/numeros" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Modo Multijugador">
+        <CheckBoxPreference
+            android:key="opcion4"
+            android:title="Activar modo multijugador"/>
+        <ListPreference
+            android:key="opcion5"
+            android:title="Máximo de jugadores"
+            android:dialogTitle="Indicar el número maximo de jugadores"
+            android:entries="@array/jugadores"
+            android:entryValues="@array/jugadores" />
+        <ListPreference
+            android:key="opcion6"
+            android:title="Tipo de conexión"
+            android:dialogTitle="Indicar tipo de conexión"
+            android:entries="@array/conexion"
+            android:entryValues="@array/conexion" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
