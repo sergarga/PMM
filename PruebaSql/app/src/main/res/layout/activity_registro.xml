@@ -1,0 +1,336 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:text="REGISTRO"
+            android:background="@drawable/title_style"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25dip"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+
+        <TextView
+            android:text="Nombre"
+            android:textColor="#ff3b85be"
+            android:textSize="20dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/nombreTextView"
+            android:background="@drawable/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:text="error"
+            android:id="@+id/errorNombreTextView"
+            android:textColor="#ff0000"
+            android:textSize="15dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff3b85be"/>
+
+        <TextView
+            android:text="Apellidos"
+            android:textColor="#ff3b85be"
+            android:textSize="20dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/apellidosTextView"
+            android:background="@drawable/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:text="error"
+            android:id="@+id/errorApellidosTextView"
+            android:textColor="#ff0000"
+            android:textSize="15dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff3b85be"/>
+
+        <TextView
+            android:text="Usuario"
+            android:textColor="#ff3b85be"
+            android:textSize="20dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/userTextView"
+            android:background="@drawable/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:text="error"
+            android:id="@+id/errorUserTextView"
+            android:textColor="#ff0000"
+            android:textSize="15dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff3b85be"/>
+
+        <TextView
+            android:text="Contraseña"
+            android:textColor="#ff3b85be"
+            android:textSize="20dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/passTextView"
+            android:background="@drawable/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:textSize="25dip"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:text="Repita contraseña"
+            android:textColor="#ff3b85be"
+            android:textSize="20dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/repassTextView"
+            android:background="@drawable/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:textSize="25dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:text="error"
+            android:id="@+id/errorPassTextView"
+            android:textColor="#ff0000"
+            android:textSize="15dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff3b85be"/>
+
+        <TextView
+            android:text="Direccion"
+            android:textColor="#ff3b85be"
+            android:textSize="20dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/dirSpinner"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit_text_style">
+                </Spinner>
+
+                <TextView
+                    android:text="Nº"
+                    android:textColor="#ff3b85be"
+                    android:textSize="20dip"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/numTextView"
+                    android:background="@drawable/edit_text_style"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dip"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="15dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+        <EditText
+            android:id="@+id/dirTextView"
+            android:background="@drawable/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:text="error"
+            android:id="@+id/errorDirTextView"
+            android:textColor="#ff0000"
+            android:textSize="15dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff3b85be"/>
+
+        <Button
+            android:id="@+id/aceptarButton"
+            android:text="Aceptar"
+            android:textSize="25dip"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style" />
+
+        <Button
+            android:id="@+id/volverButton"
+            android:text="Volver"
+            android:textSize="25dip"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+

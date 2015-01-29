@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+    <TextView
+        android:text="TRANSPORTES ANDROID"
+        android:textColor="#00FF00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/miSpinner"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <RadioButton
+            android:id="@+id/radioNormal"
+            android:text="TARIFA NORMAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"/>
+
+        <RadioButton
+            android:id="@+id/radioUrgente"
+            android:text="TARIFA URGENTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkRegalo"
+                android:text="Caja regalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="75dp"/>
+
+            <CheckBox
+                android:id="@+id/checkTarjeta"
+                android:text ="Con tarjeta dedicada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+     </TableLayout>
+
+     <TextView
+         android:text="Introduce el peso del paquete: "
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <EditText
+         android:id="@+id/pesoTxt"
+         android:layout_marginBottom="60dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/botonCalculos"
+        android:text="Hacer calculos"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>
